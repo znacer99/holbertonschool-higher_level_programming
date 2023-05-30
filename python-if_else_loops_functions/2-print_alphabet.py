@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-for ascii_value in range(97, 123):
-    print("{:c}".format(ascii_value), end="")
-print()
+for c in range(97, 123):
+    print("{}".format(chr(c)), end="")
