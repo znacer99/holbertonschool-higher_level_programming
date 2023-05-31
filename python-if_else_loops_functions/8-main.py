@@ -1,4 +1,5 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 uppercase = __import__('8-uppercase').uppercase
-uppercase('best\n')
-uppercase('best school 98 battery street\n')
+
+uppercase("best\n")
+uppercase("Best School 98 Battery street\n")
