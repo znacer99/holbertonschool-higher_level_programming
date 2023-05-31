@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-for ones in range(0, 10):
-    for tens in range(0, 10):
-        if ones < tens:
-            if ones < 8:
-                print('{}{}'.format(ones, tens), end=', ')
+for i in range(0, 10):
+    for j in range(0, 10):
+        if i < j:
+            if i < 8:
+                print('{}{}'.format(i, j), end=', ')
             else:
-                print('{}{}'.format(ones, tens))
+                print('{}{}'.format(i, j))
