@@ -4,5 +4,5 @@ def safe_print_integer(value):
         if abs(value) / 2 >= 0:
             print("{:d}".format(value))
             return True
-    except (TypeError, ValueError):
+    except:
             return False
