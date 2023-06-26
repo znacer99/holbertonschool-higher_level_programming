@@ -12,9 +12,8 @@ def list_division(my_list_1, my_list_2, list_length):
         except (TypeError, ValueError):
             division = 0
             print("wrong type")
-        except IndexError:
-            print("out of range")
-            break
         finally:
             result.append(division)
+    if len(my_list_1) < list_length or len(my_list_2) < list_length:
+        print("out of range")
     return result
