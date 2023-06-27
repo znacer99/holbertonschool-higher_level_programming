@@ -1,6 +1,7 @@
 #!/usr/bin/python3
+
+
 class Square:
+    '''Class Square
+    '''
     pass
-    """
-    creates an empty class square
-    """
