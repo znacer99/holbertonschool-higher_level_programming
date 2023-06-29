@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-"""Define Square class"""
+"""Check type"""
 
 class Square:
     """Private instance attribute: size
