@@ -12,13 +12,13 @@ class Square:
 
     @property
     def size(self):
-        """Getter method for the size attribute"""
+        """Property for the length of a size of a square"""
 
         return self.__size
 
     @size.setter
     def size(self, value):
-        """Setter method of the size attribute"""
+        """Setter function for private size attribute"""
 
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -29,13 +29,13 @@ class Square:
 
     @property
     def position(self):
-        """Getter method for the position attribute"""
+        """Property for square position"""
 
         return self.__position
 
     @position.setter
     def position(self, value):
-        """Setter method for the position attribute"""
+        """Setter function for private position attribute"""
 
         if (type(value) is not tuple or
            len(value) != 2 or
@@ -56,7 +56,7 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            for i in range(0, self.__position[1]):
+            for i in range(self.__position[1]):
                 print()
-            for i in range(0, self.__size):
+            for j in range(self.__size):
                 print(" " * self.__position[0] + "#" * self.__size)
