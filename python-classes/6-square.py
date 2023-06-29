@@ -6,17 +6,20 @@ class Square:
     """Define methods of Square"""
     def __init__(self, size=0, position=(0, 0)):
         """Initializes a square instance"""
+
         self.__size = size
         self.__position = position
 
     @property
     def size(self):
         """Getter method for the size attribute"""
+
         return self.__size
 
     @size.setter
     def size(self, value):
         """Setter method of the size attribute"""
+
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -27,11 +30,13 @@ class Square:
     @property
     def position(self):
         """Getter method for the position attribute"""
+
         return self.__position
 
     @position.setter
     def position(self, value):
         """Setter method for the position attribute"""
+
         if (type(value) is not tuple or
            len(value) != 2 or
            all(isinstance(num, int) for num in value) or
@@ -42,10 +47,12 @@ class Square:
 
     def area(self):
         """Calculate the area of the square"""
+
         return self.__size ** 2
 
     def my_print(self):
         """Print the square with the character '#'"""
+
         if self.__size == 0:
             print()
         else:
