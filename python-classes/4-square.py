@@ -2,8 +2,6 @@
 """Check type"""
 
 
-
-
 class Square:
     """Define methods of Square"""
 
@@ -13,16 +11,12 @@ class Square:
 
         self.__size = size
 
-
-
     @property
     def size(self):
 
         """Setter for Square"""
 
         return self.__size
-
-
 
     @size.setter
     def size(self, value):
@@ -35,8 +29,6 @@ class Square:
             raise ValueError("size must be >=")
         else:
             self.__size = value
-
-
 
     def area(self):
 
