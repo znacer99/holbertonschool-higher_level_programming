@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-
-
 """Check type"""
 
+
 class Square:
-    """Private instance attribute: size
-    Instantiation with optional"""
+    """Define methods of Square"""
 
     def __init__(self, size=0):
         """Initializes attribute size"""
