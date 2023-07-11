@@ -3,6 +3,8 @@
 Create a folder named models with an empty file __init__.py
 inside - with this file, the folder will become a Python module
 """
+
+
 import json
 import csv
 
@@ -18,6 +20,7 @@ class Base:
         """
         Constructor
         """
+
         if id is not None:
             self.id = id
         else:
@@ -30,6 +33,7 @@ class Base:
         Turn dictionary representation
         into JSON
         """
+
         if list_dictionaries is None:
             return "[]"
         return json.dumps(list_dictionaries)
@@ -40,6 +44,7 @@ class Base:
         Returns list of
         dictionaries from JSON
         """
+
         if json_string is None:
             return []
         return json.loads(json_string)
@@ -50,6 +55,7 @@ class Base:
         Saves JSON of dictionary
         to a file <Class name>.json
         """
+
         listdict = []
         if not list_objs:
             list_objs = []
@@ -65,6 +71,7 @@ class Base:
         Returns instance with
         all attributes set
         """
+
         if cls.__name__ is 'Rectangle':
             newInstance = cls(1, 1)
             newInstance.update(**dictionary)
@@ -82,6 +89,7 @@ class Base:
         Returns a list
         of instances
         """
+
         instanceList = []
         try:
             with open('{}.json'.format(cls.__name__), 'r',
@@ -98,6 +106,7 @@ class Base:
         """
         Wrte to csv
         """
+
         listToDictionary = []
         if list_objs is not None:
             list_objs = []
@@ -114,6 +123,7 @@ class Base:
         Returns a list
         of instances
         """
+
         instanceList = []
         try:
             with open('{}'.format(cls.__name__), 'r', encoding='utf-8') as f:
